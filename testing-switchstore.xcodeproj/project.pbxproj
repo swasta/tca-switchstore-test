@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		1413FA8B28C8B0600079DB30 /* testing_switchstoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1413FA8A28C8B0600079DB30 /* testing_switchstoreApp.swift */; };
-		1413FA8D28C8B0600079DB30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1413FA8C28C8B0600079DB30 /* ContentView.swift */; };
 		1413FA8F28C8B0610079DB30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1413FA8E28C8B0610079DB30 /* Assets.xcassets */; };
 		1413FA9228C8B0610079DB30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1413FA9128C8B0610079DB30 /* Preview Assets.xcassets */; };
+		1413FA9A28C8B08B0079DB30 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 1413FA9928C8B08B0079DB30 /* ComposableArchitecture */; };
+		1413FA9C28C8B08B0079DB30 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 1413FA9B28C8B08B0079DB30 /* Dependencies */; };
+		1466F8E828C8F0DE005F69E9 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466F8E728C8F0DE005F69E9 /* FirstScreen.swift */; };
+		1466F8EA28C8F0E6005F69E9 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466F8E928C8F0E6005F69E9 /* SecondScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1413FA8728C8B0600079DB30 /* testing-switchstore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "testing-switchstore.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1413FA8A28C8B0600079DB30 /* testing_switchstoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testing_switchstoreApp.swift; sourceTree = "<group>"; };
-		1413FA8C28C8B0600079DB30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1413FA8E28C8B0610079DB30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1413FA9128C8B0610079DB30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1466F8E728C8F0DE005F69E9 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+		1466F8E928C8F0E6005F69E9 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1413FA9A28C8B08B0079DB30 /* ComposableArchitecture in Frameworks */,
+				1413FA9C28C8B08B0079DB30 /* Dependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				1413FA8A28C8B0600079DB30 /* testing_switchstoreApp.swift */,
-				1413FA8C28C8B0600079DB30 /* ContentView.swift */,
+				1466F8E728C8F0DE005F69E9 /* FirstScreen.swift */,
+				1466F8E928C8F0E6005F69E9 /* SecondScreen.swift */,
 				1413FA8E28C8B0610079DB30 /* Assets.xcassets */,
 				1413FA9028C8B0610079DB30 /* Preview Content */,
 			);
@@ -83,6 +90,10 @@
 			dependencies = (
 			);
 			name = "testing-switchstore";
+			packageProductDependencies = (
+				1413FA9928C8B08B0079DB30 /* ComposableArchitecture */,
+				1413FA9B28C8B08B0079DB30 /* Dependencies */,
+			);
 			productName = "testing-switchstore";
 			productReference = 1413FA8728C8B0600079DB30 /* testing-switchstore.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 1413FA7E28C8B0600079DB30;
+			packageReferences = (
+				1413FA9828C8B08B0079DB30 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 1413FA8828C8B0600079DB30 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1413FA8D28C8B0600079DB30 /* ContentView.swift in Sources */,
+				1466F8EA28C8F0E6005F69E9 /* SecondScreen.swift in Sources */,
 				1413FA8B28C8B0600079DB30 /* testing_switchstoreApp.swift in Sources */,
+				1466F8E828C8F0DE005F69E9 /* FirstScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +354,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1413FA9828C8B08B0079DB30 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = "protocol-beta";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1413FA9928C8B08B0079DB30 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1413FA9828C8B08B0079DB30 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		1413FA9B28C8B08B0079DB30 /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1413FA9828C8B08B0079DB30 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = Dependencies;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1413FA7F28C8B0600079DB30 /* Project object */;
 }
